@@ -1,0 +1,8 @@
+{
+  "password_label": "Senha",
+  "password_hint": "Insira uma senha de 4 caracteres",
+  "description_label": "Descrição do cartão",
+  "description_hint": "Este é o texto que ficará no topo do seu cartão",
+  "quantity_label": "Quantidade",
+  "quantity_hint": "Escolha a quantidade de selos para se obter o prêmio"
+}

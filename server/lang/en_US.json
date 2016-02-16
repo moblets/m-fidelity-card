@@ -1,0 +1,8 @@
+{
+  "password_label": "Password",
+  "password_hint": "Insert a 4 chars password",
+  "description_label": "Card description",
+  "description_hint": "This is the text that will be in the top of your card",
+  "quantity_label": "Quantity",
+  "quantity_hint": "Choose how many stamps will be needed to get the prize"
+}

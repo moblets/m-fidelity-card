@@ -8,10 +8,10 @@ var feed = function(data) {
     // data.description
     // data.quantity
 
-    var salt = "ashduuagdsuhfjfshfoahduasdgasdhasdh";
+    var salt = "87e460qv34[tmqu pcu[w3-5o]]";
 
     return {
-        password: CryptoJS.SHA1(sal + data.password).toString(),
+        password: CryptoJS.SHA1(salt + data.password).toString(),
         salt: salt,
         description: data.description,
         quantity: data.quantity
