@@ -1,4 +1,5 @@
 {
+  "moblet_label": "Fidelity Card",
   "password_label": "Password",
   "password_hint": "Insert a 4 chars password",
   "description_label": "Card description",

@@ -1,4 +1,5 @@
 {
+  "moblet_label": "Cartão de Fidelidade",
   "password_label": "Senha",
   "password_hint": "Insira uma senha de 4 caracteres",
   "description_label": "Descrição do cartão",
