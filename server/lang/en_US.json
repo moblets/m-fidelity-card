@@ -1,9 +1,15 @@
 {
   "moblet_label": "Fidelity Card",
+  "moblet_hint": "Create a fidelity card to your customers",
   "password_label": "Password",
   "password_hint": "Insert a 4 chars password",
+  "password_placeholder": "1423",
   "description_label": "Card description",
   "description_hint": "This is the text that will be in the top of your card",
+  "description_placeholder": "Lunch 9 times and the 10th is free!!!",
   "quantity_label": "Quantity",
-  "quantity_hint": "Choose how many stamps will be needed to get the prize"
+  "quantity_hint": "Choose how many stamps will be needed to get the prize",
+  "quantity.value_3": "3 stamps",
+  "quantity.value_6": "6 stamps",
+  "quantity.value_9": "9 stamps"
 }

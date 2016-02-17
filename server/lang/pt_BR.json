@@ -1,9 +1,15 @@
 {
   "moblet_label": "Cartão de Fidelidade",
+  "moblet_hint": "Crie um cartão de fidelidade para seus clientes",
   "password_label": "Senha",
   "password_hint": "Insira uma senha de 4 caracteres",
+  "password_placeholder": "1423",
   "description_label": "Descrição do cartão",
   "description_hint": "Este é o texto que ficará no topo do seu cartão",
+  "description_placeholder": "Almoce 9 vezes e a 10ª é grátis",
   "quantity_label": "Quantidade",
-  "quantity_hint": "Escolha a quantidade de selos para se obter o prêmio"
+  "quantity_hint": "Escolha a quantidade de selos para se obter o prêmio",
+  "quantity.value_3": "3 carimbos",
+  "quantity.value_6": "6 carimbos",
+  "quantity.value_9": "9 carimbos"
 }
