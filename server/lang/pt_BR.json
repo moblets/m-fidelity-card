@@ -1,6 +1,7 @@
 {
   "moblet_label": "Cartão de Fidelidade",
   "moblet_hint": "Crie um cartão de fidelidade para seus clientes",
+  "moblet_description": "Preencha os campos abaixo para criar o cartão de fidelidade",
   "password_label": "Senha",
   "password_hint": "Insira uma senha de 4 caracteres",
   "password_placeholder": "1423",
