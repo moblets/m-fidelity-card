@@ -1,0 +1,9 @@
+{
+  "enter_stamp_password": "Insira a senha para carimbar",
+  "enter_reward_password": "Insira a senha para entregar a recompensa",
+  "reward_confirm": "Você tem certeza que deseja entregar a recompensa e reiniciar o cartão?",
+  "stamp_button": "CARIMBAR",
+  "reward_button": "ENTREGAR",
+  "wrong_pass": "Senha incorreta",
+  "stamp_card_reward": "Cartão reiniciado"
+}
