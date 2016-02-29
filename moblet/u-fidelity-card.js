@@ -1,8 +1,10 @@
-var path = require('path');
-var fs = require('fs');
+require ('./u-fidelity-card.scss');
+var path = require('path'),
+    fs = require('fs');
+
 
 angular.module('uMoblets')
-    .directive('uFidelityCard', function() {
+    .directive('uFidelityCard', function () {
         return {
             restrict: 'E',
             scope: {
@@ -10,13 +12,13 @@ angular.module('uMoblets')
                 data: "="
             },
             template: fs.readFileSync(path.join(__dirname, 'u-fidelity-card.html'), 'utf8'),
-            link: function() {
+            link: function () {
 
             },
-            controller: function($scope, $localStorage, $timeout, $loading, $ionicPopup, $uAlert, $filter) {
+            controller: function ($scope, $localStorage, $timeout, $loading, $ionicPopup, $uAlert, $filter) {
                 // While there is no local data, show the loader
-                $scope.$watch("data", function() {
-                    $timeout(function() {
+                $scope.$watch("data", function () {
+                    $timeout(function () {
                         if (typeof $scope.data !== "undefined") {
                             if (typeof $localStorage["uFidelityCard::quantity"] === "undefined") {
                                 $scope.quantity = $scope.data.quantity;
@@ -29,7 +31,7 @@ angular.module('uMoblets')
                     }, 10);
                 });
 
-                $scope.init = function() {
+                $scope.init = function () {
                     $scope.form = {
                         password: ""
                     };
@@ -43,8 +45,8 @@ angular.module('uMoblets')
                     }
                 };
 
-                $scope.stamp = function() {
-					var title , buttonText;
+                $scope.stamp = function () {
+                    var title, buttonText;
                     if ($scope.stamped === $scope.quantity) {
                         title = $filter('translate')("enter_reward_password");
                         buttonText = $filter('translate')("reward_button");
@@ -60,7 +62,7 @@ angular.module('uMoblets')
                             text: $filter('translate')("cancel")
                         }, {
                             text: '<b>' + buttonText + '</b>',
-                            onTap: function(e) {
+                            onTap: function (e) {
                                 if ($scope.password === $scope.form.password) {
                                     $scope.form.password = "";
                                     if ($scope.stamped < $scope.quantity) {
@@ -79,10 +81,10 @@ angular.module('uMoblets')
                     });
                 };
 
-                $scope.stamps = function(quantity, stamped) {
+                $scope.stamps = function (quantity, stamped) {
                     if (typeof quantity !== "undefined") {
 
-                        var itens = new Array(parseInt(quantity , 10));
+                        var itens = new Array(parseInt(quantity, 10));
 
                         for (var i = 0; i < stamped; i++) {
                             itens[i] = 1;
@@ -95,14 +97,14 @@ angular.module('uMoblets')
                     }
                 };
 
-                $scope.confirmFullCard = function() {
+                $scope.confirmFullCard = function () {
                     $ionicPopup.confirm({
                         title: $filter('translate')("reward_confirm"),
                         buttons: [{
                             text: $filter('translate')("cancel")
                         }, {
                             text: '<b>' + $filter('translate')("yes_uppercase") + '</b>',
-                            onTap: function() {
+                            onTap: function () {
                                 $scope.stamped = 0;
                                 $localStorage["uFidelityCard::stamped"] = 0;
                                 $uAlert.toast($filter('translate')("stamp_card_reward"));
