@@ -1,22 +1,22 @@
 {
-  "fields": {
-    "password": {
-      "type": "number",
-      "max-length": 4,
-      "min-length": 4,
-      "required": true
-    },
-    "description": {
-      "type": "text-area"
-    },
-    "quantity": {
-      "type": "select",
-      "values": [
+    "fields": {
+        "password": {
+            "type": "number",
+            "max-length": 4,
+            "min-length": 4,
+            "required": true
+        },
+        "description": {
+            "type": "text-area"
+        },
+        "quantity": {
+            "type": "select",
+            "values": [
         "value_3",
         "value_6",
         "value_9"
       ],
-      "required": true
+            "required": true
+        }
     }
-  }
 }
