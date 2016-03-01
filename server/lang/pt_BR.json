@@ -12,7 +12,7 @@
     "description": {
         "label": "Descrição do cartão",
         "hint": "Este é o texto que ficará no topo do seu cartão",
-        "placeholder": "Almoce 9 vezes e a 10ª é grátis",
+        "placeholder": "Almoce 9 vezes e a 10ª é grátis"
     },
     "quantity": {
         "label": "Quantidade",
