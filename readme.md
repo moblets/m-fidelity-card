@@ -253,7 +253,7 @@ This is the file created by [NodeJs]. You only need this file if you are using a
 ### 6. readme.md
 This file is where you'll describe your Moblet. It's very important if your Moblet is Open Source, so other developers can betther understand your Moblet and contribute to it.
 
-[MIME types]: (https://www.iana.org/assignments/media-types/media-types.xhtml)
-[snake case]: (https://en.wikipedia.org/wiki/Snake_case)
-[NodeJs]: (https://nodejs.org/en/)
-[Jasmine]: (http://jasmine.github.io/2.4/introduction.html)
+[MIME types]: https://www.iana.org/assignments/media-types/media-types.xhtml
+[snake case]: https://en.wikipedia.org/wiki/Snake_case
+[NodeJs]: https://nodejs.org/en/
+[Jasmine]: http://jasmine.github.io/2.4/introduction.html
