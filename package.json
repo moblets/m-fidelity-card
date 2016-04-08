@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/fabappteam/fidelity-card.git"
   },
-  "author": "Eduardo Russo <russo@fabapp.com>",
+  "author": "Eduardo Russo",
   "license": "MIT",
   "homepage": "https://bitbucket.org/fabappteam/fidelity-card#readme",
   "dependencies": {
