@@ -1,16 +1,26 @@
 {
   "name": "fidelitycard",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a simple Moblet example created for Universo. Developers can use this Moblet to better understand how to create a Moblet.",
   "main": "Feed.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/fabappteam/fidelity-card.git"
   },
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/fabappteam/fidelity-card#readme"
+  "author": "Eduardo Russo <russo@fabapp.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/fabappteam/fidelity-card#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.6"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "fidelity",
+    "card",
+    "Moblet",
+    "Universo"
+  ]
 }
