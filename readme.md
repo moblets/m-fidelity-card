@@ -1,17 +1,15 @@
-# Fidelity Card - simple Moblet example
-This is a simple Moblet example created for Universo. Developers can use this Moblet to better understand how to create a Moblet.
+# Fidelity Card - simple moblet example
+This is a simple moblet example created for Moblets. Developers can use this moblet to better understand how to create their own.
 
-For more advanced Moblets, please access [Universo's GitHub page](https://github.com/universo).
+For more advanced moblets, please access [Moblets' GitHub page](https://github.com/moblets/).
 
 ## Moblets
-Moblets are the components of Universo. This name comes from _Mobile_ + _Widgets_.
-
-They can be used in Universo's open source project or added to our CMS.
+Moblets' name comes from _Mobile_ + _Widgets_. It's a project created to simplify the creation of mobile apllications. Apps created with Moblets structure are used in [FabApp](http://fabapp.com) CMS.
 
 ## Structure
-As Universo is based on Apache's Cordova, Moblets are made of HTML, CSS and JavaScrips. Universo's apps have a base prepared to receive a predefined structure and work with it.
+As Moblets is based on Apache Cordova, it's moblets are created with HTML, CSS and JavaScript. Moblets' apps have a base prepared to receive a predefined structure and work with it.
 
-This is the folders' structure of this Moblet:
+This is the folder structure of Fidelity Card moblet:
 
 ```
 0      fidelity-card
@@ -42,7 +40,7 @@ This is the folders' structure of this Moblet:
 5      ├── package.json
 6      └── readme.md
 ```
-Now we'll go through each file and folder to explain them. Names inside brackets (e.g. [moblet]) need to have this exact name so the Moblet is validated.
+Now we'll go through each file and folder to explain them. Names inside brackets (e.g. [moblet]) need to have this exact name so the moblet is validated in our backend.
 
 ### 0. fidelity-card folder
 This is your root directory. This folder name is not validated and doesn't need to be unique, so, you can call your Moblet whatever you want.
@@ -73,14 +71,14 @@ $filter('translate')("reward_confirm")
 ### 1.2 u-fidelity-card.html
 This is the Moblet HTML used to display the moblet content in the app.
 
-This file name must match the name passed through the Moblet Upload System and **must be unique** inside Universo.
+This file name must match the name passed through the Moblet Upload System and **must be unique** inside Moblets.
 
 This is an [AngularJS directive](https://docs.angularjs.org/guide/directive) HTML.
 
 ### 1.3 u-fidelity-card.js
 This is the Moblet JavaScript used for the Moblet's business logic.
 
-This file name must match the name passed through the Moblet Upload System and **must be unique** inside Universo.
+This file name must match the name passed through the Moblet Upload System and **must be unique** inside Moblets.
 
 This is an [AngularJS directive](https://docs.angularjs.org/guide/directive) JavaScript.
 
@@ -89,9 +87,9 @@ This file must use the ```restrict: 'E'``` convention so it will create an **ele
 ### 1.4 u-fidelity-card.scss
 This is the Moblet CSS used for the Moblet's business logic. You can use CSS, SCSS or SASS for this.
 
-This file name must match the name passed through the Moblet Upload System and **must be unique** inside Universo.
+This file name must match the name passed through the Moblet Upload System and **must be unique** inside Moblets.
 
-The styles used in the Moblet can overwrite Universo's styles, but they will only affect the Moblet context.
+The styles used in the Moblet can overwrite Moblets's styles, but they will only affect the Moblet context.
 
 ### 2. [server]
 This folder is where you'll store the app backend files. These files will be used into the FabApp CMS when some app creator insert the Moblet into their app.
@@ -195,9 +193,9 @@ The **type** must be one of the followig HTML input types:
 | tel               | color                     |                       |
 | email             | button                    |                       |
 
-Some types need specific data that are better explained in the Universo development documentation. All the fields have automatic validation to check if the filled content matches the expected type. For instance, you can't upload a text in an image field or, a text in an email field.
+Some types need specific data that are better explained in the Moblets development documentation. All the fields have automatic validation to check if the filled content matches the expected type. For instance, you can't upload a text in an image field or, a text in an email field.
 
-The other data in this JSON are relative to the field validation. You can use the following validations and, to better understand them, check the Universo development documentation.
+The other data in this JSON are relative to the field validation. You can use the following validations and, to better understand them, check the Moblets development documentation.
 
 | Validation        | Usage                             | Field type                                                | Objective                          |
 | ----------------- | --------------------------------- | --------------------------------------------------------- | ---------------------------------- |
@@ -221,7 +219,7 @@ The other data in this JSON are relative to the field validation. You can use th
 | required_if       | JSON object with field name, matched value and boolean for 'hide' (default is false) | any type  | the field become available if another field is filled with the matched value. |
 
 ### 2.5 [feed.js]
-This file is used by the server to serve the feed for the Moblet. Universo App-API and NorMA use this [NodeJs] file to get the data needed by the Moblet.
+This file is used by the server to serve the feed for the Moblet. Moblets App-API and NorMA use this [NodeJs] file to get the data needed by the Moblet.
 
 The ```feed``` function is mandatory and receive as param the stored config in the DB.
 
