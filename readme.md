@@ -15,31 +15,31 @@ This is the folders' structure of this Moblet:
 
 ```
 0      fidelity-card
-1      └── moblet
-1.1    |   └── lang
-1.1.1  |   |   └── en-US.json
+1      ├── moblet
+1.1    |   ├── lang
+1.1.1  |   |   ├── en-US.json
 1.1.1  |   |   └── pt-BR.json
-1.2    |   └── u-fidelity-card.html
-1.3    |   └── u-fidelity-card.js
+1.2    |   ├── u-fidelity-card.html
+1.3    |   ├── u-fidelity-card.js
 1.4    |   └── u-fidelity-card.scss
-2      └── server
-2.1    |   └── changelog
+2      ├── server
+2.1    |   ├── changelog
 2.1.1  |   |   └── en-US.md
-2.2    |   └── helper
-2.2.1  |   |   └── pt-BR.md
+2.2    |   ├── helper
+2.2.1  |   |   ├── pt-BR.md
 2.2.2  |   |   └── example-image.gif
-2.3    |   └── lang
-2.3.1  |   |   └── en-US.json
+2.3    |   ├── lang
+2.3.1  |   |   ├── en-US.json
 2.3.1  |   |   └── pt-BR.json
-2.4    |   └── form.json
-2.5    |   └── feed.js
+2.4    |   ├── form.json
+2.5    |   ├── feed.js
 2.6    |   └── icon.svg
-3      └── spec
-3.1    |   └── support
+3      ├── spec
+3.1    |   ├── support
 3.1.1  |   |   └── jasmine.json
 3.2    |   └── feed-spec.js
-4      └── .gitignore
-5      └── package.json
+4      ├── .gitignore
+5      ├── package.json
 6      └── readme.md
 ```
 Now we'll go through each file and folder to explain them. Names inside brackets (e.g. [moblet]) need to have this exact name so the Moblet is validated.
