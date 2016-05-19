@@ -1,14 +1,14 @@
 {
-  "name": "fidelitycard",
+  "name": "m-fidelity-card",
   "version": "1.0.0",
-  "description": "This is a simple Moblet example created for Universo. Developers can use this Moblet to better understand how to create a Moblet.",
+  "description": "This is a Fidelity Card moblet for Moblets and FabApp. You can use it as base to create a new one.",
   "main": "Feed.js",
   "scripts": {
     "test": "jasmine"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/fabappteam/fidelity-card.git"
+    "url": "git+ssh://git@github.com:moblets/m-fidelity-card.git"
   },
   "author": "Eduardo Russo",
   "license": "MIT",
@@ -20,7 +20,8 @@
   "keywords": [
     "fidelity",
     "card",
-    "Moblet",
-    "Universo"
+    "moblet",
+    "Moblets",
+    "FabApp"
   ]
 }
