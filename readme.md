@@ -68,14 +68,14 @@ e.g.
 $filter('translate')("reward_confirm")
 ```
 
-### 1.2 u-fidelity-card.html
+### 1.2 m-fidelity-card.html
 This is the moblet HTML used to display the moblet content in the app.
 
 This file name must match the name passed through the Moblet Upload System and **must be unique** inside Moblets.
 
 This is an [AngularJS directive](https://docs.angularjs.org/guide/directive) HTML.
 
-### 1.3 u-fidelity-card.js
+### 1.3 m-fidelity-card.js
 This is the moblet JavaScript used for the Moblet's business logic.
 
 This file name must match the name passed through the Moblet Upload System and **must be unique** inside Moblets.
@@ -84,7 +84,7 @@ This is an [AngularJS directive](https://docs.angularjs.org/guide/directive) Jav
 
 This file must use the ```restrict: 'E'``` convention so it will create an **element**.
 
-### 1.4 u-fidelity-card.scss
+### 1.4 m-fidelity-card.scss
 This is the moblet CSS used for the Moblet's business logic. You can use CSS, SCSS or SASS for this.
 
 This file name must match the name passed through the Moblet Upload System and **must be unique** inside Moblets.
