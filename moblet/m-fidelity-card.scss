@@ -7,14 +7,14 @@ m-fidelity-card{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items:flex-start;
-    align-content: space-around;
+    display: flex;
+    justify-content: space-around;
     .stamp {
-      width: 33%;
-      background-repeat: no-repeat;
-      margin-bottom: 5px;
-      text-align: center;
+      width: calc(30% - 10px);
+      margin-left: 10px;
+      &:nth-child(3n) {
+        margin-right: 10px;
+      }
       img {
         width: 100%;
       }
@@ -26,5 +26,17 @@ m-fidelity-card{
         margin-left: -100%;
       }
     }
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4, h5, h6, p {
+    font-size: 14px;
   }
 }

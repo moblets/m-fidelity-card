@@ -27,13 +27,25 @@ module.exports = {
       return cryptoJS.SHA1($scope.salt + password).toString();
     };
 
+    var getRandomPosition = function() {
+      var rotation = -15 + Math.floor(Math.random() * 30);
+      var originX = 40 + Math.floor(Math.random() * 20);
+      var originY = 40 + Math.floor(Math.random() * 20);
+
+      return {
+        rotation: rotation,
+        originX: originX,
+        originY: originY
+      };
+    };
+
     var setStamps = function() {
       $scope.stamped = $localStorage[lsKey + 'stamped'] || 0;
 
       $scope.stamps = new Array($scope.quantity);
 
       for (var i = 0; i < $scope.stamped; i++) {
-        $scope.stamps[i] = 1;
+        $scope.stamps[i] = getRandomPosition();
       }
     };
 
@@ -116,7 +128,7 @@ module.exports = {
                 confirmFullCard();
               } else {
                 $timeout(function() {
-                  $scope.stamps[$scope.stamped] = 1;
+                  $scope.stamps[$scope.stamped] = getRandomPosition();
                   $scope.stamped += 1;
                   $localStorage[lsKey + 'stamped'] = $scope.stamped;
                 }, 10);
