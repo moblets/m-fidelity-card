@@ -18,8 +18,9 @@
     "label": "Quantity",
     "hint": "Choose how many stamps will be needed to get the prize",
     "default": "Select a quantity",
-    "value_3": "3 stamps",
-    "value_6": "6 stamps",
-    "value_9": "9 stamps"
+    "value_9": "9 stamps",
+    "value_12": "12 stamps",
+    "value_15": "15 stamps",
+    "value_18": "18 stamps"
   }
 }
