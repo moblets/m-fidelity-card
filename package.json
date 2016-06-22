@@ -16,7 +16,12 @@
   "dependencies": {
     "crypto-js": "^3.1.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "eslint-config-google": "^0.5.0",
+    "eslint-plugin-jsdoc": "^2.3.1",
+    "jsdoc": "^3.4.0"
+  },
   "keywords": [
     "fidelity",
     "card",

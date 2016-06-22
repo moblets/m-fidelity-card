@@ -15,11 +15,19 @@
             "name": "quantity",
             "type": "select",
             "values": {
-                "0": "value_3",
-                "1": "value_6",
-                "2": "value_9"
+                "3": "value_3",
+                "6": "value_6",
+                "9": "value_9"
             },
             "required": true
+        },
+        {
+          "name": "stamp",
+          "type": "image"
+        },
+        {
+          "name": "stamped_stamp",
+          "type": "image"
         }
     ]
 }
