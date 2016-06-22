@@ -1,9 +1,4 @@
-u-fidelity-card{
-  .stamp-card {
-    background-image: url("https://s3.amazonaws.com/static.fabricadeaplicativos.com.br/moblets/u-fidelity-card/textured_paper.png");
-    background-repeat: repeat;
-    height: 100%;
-  }
+m-fidelity-card{
   .description{
     padding: 20px;
     font-size: 1.2em;
@@ -33,17 +28,3 @@ u-fidelity-card{
     }
   }
 }
-
-// .stamp-show{
-//
-//     -webkit-animation: fadeinStamp .3s; /* Safari, Chrome and Opera > 12.1 */
-//        -moz-animation: fadeinStamp .3s; /* Firefox < 16 */
-//         -ms-animation: fadeinStamp .3s; /* Internet Explorer */
-//          -o-animation: fadeinStamp .3s; /* Opera < 12.1 */
-//             animation: fadeinStamp .3s;
-// }
-//
-// @keyframes fadeinStamp {
-//     from  { transform: scale(2); opacity: 0;}
-//     to    { transform: scale(1); opacity: 1;}
-// }

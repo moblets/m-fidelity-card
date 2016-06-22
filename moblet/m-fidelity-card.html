@@ -1,15 +1,15 @@
 <m-moblet is-loading="isLoading" init="init" inner-scroll="true" unavaliable="error">
-  <div class="stamp-card">
+  <m-content ng-if="!isDetail" reload="load" more="more">
     <div class="description">
       <p>
-        {{card.description}}
+        {{description}}
       </p>
     </div>
     <div class="stamps">
       <div ng-click="stamp($index)" class="stamp stamp-empty" ng-repeat="item in stamps track by $index">
-        <img ng-if="item == null" ng-class="{'stamp-show':(item == null)}" ng-src="{{ stampEmpty }}" />
-        <img ng-if="item == 1" ng-class="{'stamp-show':(item == 1)}" ng-src="{{ stampFilled }}" />
+        <img ng-if="item == 1" ng-src="{{ stampFilled }}"/>
+        <img ng-if="item == null" ng-src="{{ stampEmpty }}"/>
       </div>
     </div>
-  </div>
+  </m-content>
 </m-moblet>

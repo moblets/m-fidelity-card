@@ -1,9 +1,13 @@
 {
   "enter_stamp_password": "Insert password to stamp",
   "enter_reward_password": "Insert password to give the reward",
+  "reward_confirm_title": "Confirmation",
   "reward_confirm": "Are you sure you want to give the reward and reset the card?",
   "stamp_button": "STAMP",
   "reward_button": "REWARD",
   "wrong_pass": "Wrong password",
-  "stamp_card_reward": "Card reseted"
+  "try_again": "Try again",
+  "reward_title": "Card reseted",
+  "reward_cicle_reset": "Reward cicle restarted",
+  "go_back": "Retry"
 }
