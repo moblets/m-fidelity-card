@@ -54,6 +54,7 @@ module.exports = {
           $scope.description = card.description;
           $scope.quantity = card.quantity;
           $scope.salt = card.salt;
+          console.log(card.stampEmpty);
           $scope.stampEmpty = card.stampEmpty || 'https://s3.amazonaws.com/' +
           'static.fabricadeaplicativos.com.br/moblets/' +
           'u-fidelity-card/stamp-off.png';
