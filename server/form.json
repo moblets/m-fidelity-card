@@ -22,11 +22,11 @@
             "required": true
         },
         {
-          "name": "stamp",
+          "name": "stampEmpty",
           "type": "image"
         },
         {
-          "name": "stamped_stamp",
+          "name": "stampFilled",
           "type": "image"
         }
     ]

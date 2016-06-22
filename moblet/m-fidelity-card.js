@@ -36,19 +36,50 @@ module.exports = {
     //   }, 10);
     // });
 
-    $scope.init = function() {
-      dataLoadOptions = {cache: false};
+    var init = function() {
+      $scope.isLoading = true;
       $scope.form = {password: ""};
-      $mDataLoader.load($scope.moblet, dataLoadOptions)
-        .then(function(data) {
-          console.log(data);
-        });
 
+      var cryptoJS = require('crypto-js');
+      var dataLoadOptions = {cache: false};
+
+      $scope.testPassword = function(password) {
+        /* eslint new-cap: 0 */
+        cryptoJS.SHA1($scope.card.salt + password).toString();
+      };
+
+      $mDataLoader.load($scope.moblet, dataLoadOptions)
+        .then(function(card) {
+          $scope.password = card.password;
+          $scope.description = card.description;
+          $scope.quantity = card.quantity;
+          $scope.salt = card.salt;
+          $scope.stampEmpty = card.stampEmpty || 'https://s3.amazonaws.com/' +
+          'static.fabricadeaplicativos.com.br/moblets/' +
+          'u-fidelity-card/stamp-off.png';
+          $scope.stampFilled = card.stampFilled || 'https://s3.amazonaws.com/' +
+          'static.fabricadeaplicativos.com.br/moblets/' +
+          'u-fidelity-card/stamp-on.png';
+
+          $scope.stamped = $localStorage[
+            'mFidelityCard' +
+            $scope.moblet.id +
+            '::stamped'] || 0;
+
+          $scope.stamps = new Array(parseInt($scope.quantity, 10));
+
+          for (var i = 0; i < $scope.stamped; i++) {
+            $scope.stamps[i] = 1;
+          }
+          $scope.stamps[0] = 1;
+
+          $scope.isLoading = false;
+        }
+      );
       // $scope.quantity = $localStorage["uFidelityCard::quantity"];
       // $scope.stamped = $localStorage["uFidelityCard::stamped"] || 0;
       // $scope.password = $localStorage["uFidelityCard::password"];
-      $scope.isLoading = false;
-      $scope.olar = 'hellor';
+
     //   if (
     //     typeof $scope.quantity === "undefined" &&
     //   typeof $scope.password === "undefined"
@@ -94,19 +125,6 @@ module.exports = {
     //   });
     // };
     //
-    // $scope.stamps = function(quantity, stamped) {
-    //   var items = [];
-    //   if (quantity === undefined) {
-    //     items = [];
-    //   } else {
-    //     items = new Array(parseInt(quantity, 10));
-    //
-    //     for (var i = 0; i < stamped; i++) {
-    //       items[i] = 1;
-    //     }
-    //   }
-    //   return items;
-    // };
     //
     // $scope.confirmFullCard = function() {
     //   $ionicPopup.confirm({
@@ -124,6 +142,6 @@ module.exports = {
     //   });
     // };
 
-    $scope.init();
+    init();
   }
 };

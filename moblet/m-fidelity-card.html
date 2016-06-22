@@ -1,15 +1,15 @@
-<m-moblet is-loading="isLoading" inner-scroll="true" unavaliable="error">
+<m-moblet is-loading="isLoading" init="init" inner-scroll="true" unavaliable="error">
   <div class="stamp-card">
     <div class="description">
       <p>
-        {{olar}}
+        {{card.description}}
       </p>
     </div>
-    <!-- <div class="stamps">
-      <div ng-click="stamp($index)" class="stamp stamp-empty" ng-repeat="item in stamps(quantity, stamped) track by $index">
-        <img ng-if="item == null" ng-class="{'stamp-show':(item == null)}" src="https://s3.amazonaws.com/static.fabricadeaplicativos.com.br/moblets/u-fidelity-card/stamp-off.png" />
-        <img ng-if="item == 1" ng-class="{'stamp-show':(item == 1)}" src="https://s3.amazonaws.com/static.fabricadeaplicativos.com.br/moblets/u-fidelity-card/stamp-on.png?" />
+    <div class="stamps">
+      <div ng-click="stamp($index)" class="stamp stamp-empty" ng-repeat="item in stamps track by $index">
+        <img ng-if="item == null" ng-class="{'stamp-show':(item == null)}" ng-src="stampEmpty" />
+        <img ng-if="item == 1" ng-class="{'stamp-show':(item == 1)}" ng-src="stampFilled" />
       </div>
-    </div> -->
+    </div>
   </div>
 </m-moblet>

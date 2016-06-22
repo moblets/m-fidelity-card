@@ -1,25 +1,25 @@
 {
-    "moblet": {
-        "label": "Fidelity Card",
-        "hint": "Create a fidelity card to your customers",
-        "description": "Fill out the form below to create the fidelity card"
-    },
-    "password": {
-        "label": "Password",
-        "hint": "Insert a 4 chars password",
-        "placeholder": "1423"
-    },
-    "description": {
-        "label": "Card description",
-        "hint": "This is the text that will be in the top of your card",
-        "placeholder": "Lunch 9 times and the 10th is free!!!"
-    },
-    "quantity": {
-        "label": "Quantity",
-        "hint": "Choose how many stamps will be needed to get the prize",
-        "default": "Select a quantity",
-        "value_3": "3 stamps",
-        "value_6": "6 stamps",
-        "value_9": "9 stamps"
-    }
+  "moblet": {
+    "label": "Fidelity Card",
+    "hint": "Create a fidelity card to your customers",
+    "description": "Fill out the form below to create the fidelity card"
+  },
+  "password": {
+    "label": "Password",
+    "hint": "Insert a 4 chars password",
+    "placeholder": "1423"
+  },
+  "description": {
+    "label": "Card description",
+    "hint": "This is the text that will be in the top of your card",
+    "placeholder": "Lunch 9 times and the 10th is free!!!"
+  },
+  "quantity": {
+    "label": "Quantity",
+    "hint": "Choose how many stamps will be needed to get the prize",
+    "default": "Select a quantity",
+    "value_3": "3 stamps",
+    "value_6": "6 stamps",
+    "value_9": "9 stamps"
+  }
 }
