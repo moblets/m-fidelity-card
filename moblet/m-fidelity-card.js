@@ -114,7 +114,7 @@ module.exports = {
 
       $ionicPopup.show({
         template: '<input autofocus id="password" ' +
-          'type="number" ng-model="form.password">',
+          'type="password" ng-model="form.password">',
         title: title,
         scope: $scope,
         buttons: [{
