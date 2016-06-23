@@ -1,15 +1,13 @@
 <m-moblet is-loading="isLoading" init="init" inner-scroll="true" unavaliable="error">
   <m-content ng-if="!isDetail" reload="load" more="more">
-    <div class="description">
-      <p ng-bind-html="description"></p>
-      <h1 ng-bind="stampPosition()"></h1>
-    </div>
+    <div class="description" ng-bind-html="description"></div>
     <div class="stamps">
-      <div ng-click="stamp($index)" class="stamp " ng-repeat="item in stamps track by $index">
+      <div ng-click="stamp($index)" class="stamp " ng-repeat="item in stamps track by $index" style="background-image: url({{ stampEmpty }});">
         <img
           ng-if="item != null"
           style="transform: rotate({{ item.rotation }}deg); transform-origin: {{ item.originX }}% {{ item.originY }}%;"
           ng-src="{{ stampFilled }}"/>
+
         <img ng-if="item == null" ng-src="{{ stampEmpty }}"/>
       </div>
     </div>
