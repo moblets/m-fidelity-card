@@ -10,14 +10,14 @@ module.exports = {
   link: function() {},
   controller: function(
     $scope,
-    $mMoblet,
-    $mDataLoader,
     $filter,
     $ionicScrollDelegate,
     $localStorage,
-    $timeout,
     $ionicPopup,
-    $uAlert
+    $timeout,
+    $mMoblet,
+    $mDataLoader,
+    $mAlert
   ) {
     var lsKey = 'mFidelityCard' + $scope.moblet.id + '::';
 
@@ -61,7 +61,7 @@ module.exports = {
             $scope.stamped = 0;
             $localStorage[lsKey + 'stamped'] = 0;
             setStamps();
-            $uAlert.shows(
+            $mAlert.shows(
               $filter('translate')("reward_title"),
               $filter('translate')("reward_cicle_reset"),
               'OK'
@@ -134,7 +134,7 @@ module.exports = {
                 }, 10);
               }
             } else {
-              $uAlert.shows(
+              $mAlert.shows(
                 $filter('translate')("wrong_pass"),
                 $filter('translate')("try_again"),
                 $filter('translate')("go_back")
