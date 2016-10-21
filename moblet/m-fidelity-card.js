@@ -1,7 +1,7 @@
 /* eslint no-undef: [0]*/
 module.exports = {
   title: "mFidelityCard",
-  style: "m-fidelity-card.scss",
+  style: "m-fidelity-card.less",
   template: 'm-fidelity-card.html',
   i18n: {
     pt: "lang/pt-BR.json",
