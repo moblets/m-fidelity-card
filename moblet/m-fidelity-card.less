@@ -1,0 +1,59 @@
+m-fidelity-card{
+  input[type=password] {
+    padding-left: 10px;
+  }
+  
+  .description{
+    padding: 10px;
+  }
+
+  .stamps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin: 0 10px;
+    padding: 10px 0;
+
+    .stamp {
+      width: calc(30% - 10px);
+      margin-left: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &:nth-child(3n) {
+        margin-right: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .card-full {
+      width: 33%;
+      margin-left: 50%;
+
+      img {
+        margin-left: -100%;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4, h5, h6, p {
+    font-size: 14px;
+  }
+}
